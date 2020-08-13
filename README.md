@@ -171,4 +171,8 @@ file6_001.fasta	file7_001.fasta	file8_001.fasta	file9_001.fasta
 To removed numbers after `_` in a large number of files in the same directory all at once, use:
 ```
 for file in *.fasta; do NEW="`echo $file | awk -F"_" '{print $1}'`.fasta"; mv $file $NEW; done
+
+$ ls
+file1.fasta	file2.fasta	file3.fasta	file4.fasta	file5.fasta
+file6.fasta	file7.fasta	file8.fasta	file9.fasta
 ```
