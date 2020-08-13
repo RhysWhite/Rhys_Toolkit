@@ -69,7 +69,7 @@ To list lines in directory and count characters
 
 .. code-block::
 
-	while read f ; do echo $f | wc ; done < ${FILE}
+	while read f ; do echo $f | wc ; done < <file>
 
 Making a new directory
 ---------------------------------------
