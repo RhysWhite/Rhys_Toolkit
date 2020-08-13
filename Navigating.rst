@@ -10,7 +10,9 @@ $ pwd
 /Users/rhys
 ```
 
-### Showing the contents of a directory
+Showing the contents of a directory
+---------------------------------------
+
 The `ls` command will list the contents of a directory and print to the screen as standard output.
 ```
 $ ls /Users/rhys
@@ -58,7 +60,9 @@ To list lines in directory and count characters
 while read f ; do echo $f | wc ; done < ${FILE}
 ```
 
-### Making a new directory
+Making a new directory
+---------------------------------------
+
 The `mkdir` command will create a directory(s)
 The `rmdir` command will delete a directory(s)
 ```
@@ -68,7 +72,7 @@ $ mkdir week1/seqs
 $ cd week1
 ```
 
-### Changing directories
+Changing directories
 The `cd` command will allow you to move around your directories
 
 To move into your directory, use:
@@ -100,7 +104,9 @@ $ pwd
 /Users/<user_ID>
 ```
 
-### Moving directories
+Moving directories
+---------------------------------------
+
 To move files (can also use for renaming), use:
 ```
 $ mv <Path/To/File/filename> <destination>
