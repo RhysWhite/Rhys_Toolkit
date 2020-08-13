@@ -106,9 +106,31 @@ $ pwd
 ### Moving directories
 To move files (can also use for renaming), use:
 ```
-mv <Path/To/File/filename> <destination>
+$ mv <Path/To/File/filename> <destination>
 ```
 A similar command can be used for copying files:
 ```
-cp <Path/To/File/filename> <destination>
+$ cp <Path/To/File/filename> <destination>
+```
+
+## File compression and archiving
+The `gzip` command will compress a single-file where the output will typically have the suffix `.gz.`
+To compress a file (produces a new file with the `.gz` extension), use:
+```
+$ gzip <filename>
+```
+To umcompress a file , use:
+```
+$ gunzip <filename>
+```
+
+The `tar` command will archive a folder where the output will typically have the suffix `.tar.gz`
+To create a tar archive, use
+```
+$ tar -cvzf <New_name>.tar.gz <foldername_to_compress>
+```
+
+To extract files from a tar archive, use: 
+```
+$ tar -xzvf foldername_to_uncompress.tar.gz
 ```
