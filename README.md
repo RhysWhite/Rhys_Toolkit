@@ -138,11 +138,37 @@ $ tar -xzvf <foldername_to_uncompress>.tar.gz
 ## Creating soft symbolic links
 Soft links are created with the `ln` command. To link a file to your current working directory, use:
 ```
-ln -s <Path>/<file> <link>
+$ ln -s <Path>/<file> <link>
 ```
 Then to verify the new soft link, use:
 ```
-ls -l <Path>/<file> <link>
+$ ls -l <Path>/<file> <link>
 ```
 
+## Replacing text
+To find and replace text within a file (using LINUX), use:
+```
+$ sed -i 's;<OriginalText>;<ReplacementText>;g' <file>.txt
+```
 
+To find and replace text within a file (using MacOS), use:
+```
+$ sed -i '' 's;<OriginalText>;<ReplacementText>;g' <file>.txt
+```
+
+To rename a large number of files in the same directory all at once, use:
+```
+$ ls *.fsa
+file1_001.fsa	file2_001.fsa	file3_001.fsa	file4_001.fsa	file5_001.fsa
+file6_001.fsa	file7_001.fsa	file8_001.fsa	file9_001.fsa
+
+$ for i in *.fsa; do     mv "$i" "${i//.fsa/.fasta}"; done`
+
+$ ls
+file1_001.fasta	file2_001.fasta	file3_001.fasta	file4_001.fasta	file5_001.fasta
+file6_001.fasta	file7_001.fasta	file8_001.fasta	file9_001.fasta
+```
+To removed numbers after `_` in a large number of files in the same directory all at once, use:
+```
+for file in *.fasta; do NEW="`echo $file | awk -F"_" '{print $1}'`.fasta"; mv $file $NEW; done
+```
