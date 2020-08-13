@@ -18,7 +18,7 @@ The `ls` command will list the contents of a directory and print to the screen a
 ```
 $ ls /Users/rhys
 Applications  Movies     bin         Music      Desktop   Downloads
-Dropbox       Pictures	 miniconda2  Documents	 Public    miniconda3
+Dropbox       Pictures	 miniconda2  Documents	Public    miniconda3
 ```
 
 To list all files with detailed information, use:
