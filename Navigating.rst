@@ -8,10 +8,7 @@ The full path of the current working directory will be printed to standard outpu
 
 .. code-block::
 
-	$ pwd 
-	
-.. code-block::
-
+	$ pwd
 	/Users/rhys
 
 
