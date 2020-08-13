@@ -1,4 +1,4 @@
-# BINF7001_Module1
+# BINF7001 Advanced Genome Informatics - Module1
 This repository is to compliment the practical sessions which will take you through basic Linux/unix commands and how to use command line tools. If you find this session a struggle please spend the next week going through the unix tutorial notes in the [Software Carpentry
 resources](https://swcarpentry.github.io/shell-novice/aio/index.html) and review your notes from [BINF6000](https://my.uq.edu.au/programs-courses/course.html?course_code=BINF6000) on commandline computing.
 
