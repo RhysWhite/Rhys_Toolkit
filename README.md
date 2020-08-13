@@ -132,5 +132,17 @@ $ tar -cvzf <New_name>.tar.gz <foldername_to_compress>
 
 To extract files from a tar archive, use: 
 ```
-$ tar -xzvf foldername_to_uncompress.tar.gz
+$ tar -xzvf <foldername_to_uncompress>.tar.gz
 ```
+
+## Creating soft symbolic links
+Soft links are created with the `ln` command. To link a file to your current working directory, use:
+```
+ln -s <Path>/<file> <link>
+```
+Then to verify the new soft link, use:
+```
+ls -l <Path>/<file> <link>
+```
+
+
