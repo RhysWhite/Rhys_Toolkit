@@ -34,42 +34,42 @@ To list all files in a directory and order by time, use:
 
 .. code-block::
 
-	ls -l -t
+	$ ls -l -t
 
 To list the top 3 lines (2 files and the total)
 
 .. code-block::
 
-	ls -l -t | head -3
+	$ ls -l -t | head -3
 
 To list the first 2 lines of files (skipping the size line)
 
 .. code-block::
 
-	ls -l -t | tail -n +2 | head -2
+	$ ls -l -t | tail -n +2 | head -2
 
 To list the unique files using the first 7 characters of file names
 
 .. code-block::
 
-	ls -1 | cut -c1-7 | sort -u
+	$ ls -1 | cut -c1-7 | sort -u
 
 To list and use cut to split the text by "_" and takes the first field of each file name
 
 .. code-block::
 
-	ls -1 | cut -f1 -d"_" | sort -u
+	$ ls -1 | cut -f1 -d"_" | sort -u
 
 To list files in directory and count lines
 .. code-block::
 
-	ls -1 | wc -l
+	$ ls -1 | wc -l
 	
 To list lines in directory and count characters	
 
 .. code-block::
 
-	while read f ; do echo $f | wc ; done < <file>
+	$ while read f ; do echo $f | wc ; done < <file>
 
 Making a new directory
 ---------------------------------------
