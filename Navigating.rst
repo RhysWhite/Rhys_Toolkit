@@ -5,10 +5,10 @@ Printing the current working directory
 ---------------------------------------
 
 The full path of the current working directory will be printed to standard output if you use the `pwd` command. 
-
-	$ pwd
+.. code-block::
+$ pwd 
 	
-	/Users/rhys
+/Users/rhys
 
 
 Showing the contents of a directory
