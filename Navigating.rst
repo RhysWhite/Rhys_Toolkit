@@ -16,11 +16,13 @@ Showing the contents of a directory
 ---------------------------------------
 
 The `ls` command will list the contents of a directory and print to the screen as standard output.
-```
-$ ls /Users/rhys
-Applications  Movies     bin         Music      Desktop   Downloads
-Dropbox       Pictures	 miniconda2  Documents	Public    miniconda3
-```
+
+.. code-block::
+
+	$ ls /Users/rhys
+	Applications  Movies     bin         Music      Desktop   Downloads
+	Dropbox       Pictures	 miniconda2  Documents	Public    miniconda3
+
 
 To list all files with detailed information, use:
 ```
